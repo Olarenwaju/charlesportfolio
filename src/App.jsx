@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Parseat from "./pages/Parseat";
+import Plugtent from "./pages/Plugtent";
 
 
 
@@ -26,6 +27,11 @@ const App = () => {
           <Route
             path="/parseat"
             element={<Parseat/>}
+          />   
+
+          <Route
+            path="/plugtent"
+            element={<Plugtent/>}
           />      
 
         </Routes>

@@ -3,6 +3,13 @@ import parseathero from "../assets/img/parseathero-img.png"
 import eventbright from "../assets/img/eventbright-img.png"
 import sophie from "../assets/img/sophie-img.png"
 import frank from "../assets/img/Frank-img.png"
+import eventuserflow1 from "../assets/img/eventuserflow-img1.png"
+import eventuserflow2 from "../assets/img/eventuserflow-img2.png"
+import guestflow from "../assets/img/guestsflow.png"
+import lowfidelity from "../assets/img/low-fidelity1.png"
+import highfidelity from "../assets/img/high-fidelity.png"
+
+import Button from "../components/Button"
 
 
 const Parseat = () => {
@@ -209,13 +216,52 @@ const Parseat = () => {
                  in a way that aligns with their preferences and requirements.
             </p>
 
-            <div className="text-center">
-            <p className="uppercase text-[50px] font-bold pb-10">User flow for invited guests</p>
-
+            <div className="text-center pb-20 mb-20">
+                <p className="uppercase text-[60px] font-bold ">User flow for invited guests</p>
+                <p className="text-[30px] pt-2"> ( To know their seat number ) </p>
+                <img src={guestflow} className="pt-20 w-full max-w-[1100px] mx-auto"/>
+                
             </div>
 
-            
+            <div className="text-center">
+                <p className="uppercase text-[60px] font-bold pb-14"> User flow for Couples/Event Organizers</p>
+                
+                <img src={eventuserflow1} className="w-full max-w-[1190px] mx-auto mb-24" />
+                <img src={eventuserflow2} className="w-full max-w-[1190px] mx-auto" />
+            </div>
 
+        </section>
+
+        <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
+            <p className="text-[80px] font-semibold pb-5">Proposed Design Solutions</p>
+
+            <div className="text-[30px] max-w-[1000px] leading-[60px] text-[#CCCCCC] font-normal pb-14">I translated my research into designs to provide a clearer representation of the propsed solution</div>
+
+            <div className="mb-20">
+                <p className="text-[40px] font-normal pb-10">Low fidelity designs</p>
+                <img src={lowfidelity} alt="low fidelity"/>
+            </div>
+
+            <div>
+                <p className="text-[40px] font-normal pb-10">High fidelity designs</p>
+                <img src={highfidelity} alt="high fidelity"/>
+            </div>
+
+            <div className="text-4xl pt-20 text-[#CCCCCC]">
+                Link to the live version: <button className="bg-[#8238ea55] rounded p-2 text-xl">Coming soon</button>
+            </div>
+            
+        </section>
+
+        <section className="text-center mx-auto py-28"> 
+            <div className="flex flex-col">
+                <p className="text-[60px] pb-5">Thank You For Viewing</p>
+                <p className="text-5xl pb-5 text-[#CCCCCC]">Charles Emmanuel</p>
+                <p className="text-2xl pb-10 text-[#CCCCCC]">Product Designer</p>
+
+                <Button text="View my other works" classname="mx-auto max-w-[300px] bg-[#8338EA] hover:bg-[#8338EA]/90 md:px-[40px] md:py-[18px] text-[14px] sm:text-[16px] md:text-[20px] px-[25px] py-[15px] tracking-wider"/>
+
+            </div>
             
 
         </section>
@@ -223,6 +269,6 @@ const Parseat = () => {
         
     </>
   )
-}
+} 
 
 export default Parseat
