@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Parseat from "./pages/Parseat";
 import Plugtent from "./pages/Plugtent";
+import Starhomes from "./pages/Starhomes";
+import Cashblast from "./pages/Cashblast";
 
 
 
@@ -32,7 +34,17 @@ const App = () => {
           <Route
             path="/plugtent"
             element={<Plugtent/>}
-          />      
+          />    
+
+          <Route
+            path="/starhomes"
+            element={<Starhomes/>}
+          />    
+
+          <Route
+            path="/cashblast"
+            element={<Cashblast/>}
+          />    
 
         </Routes>
       </Router>
