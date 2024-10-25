@@ -6,6 +6,7 @@ import parseatimg from "../assets/img/parseat-img.png"
 //import linkicon from "../assets/img/linkicon.png"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -50,7 +51,7 @@ const Home = () => {
                         A marketplace-model platform that allows businesses to leverage the
                         creativity and audiences of content creators to market and advertise their products and services.
                     </p>
-                    <a href="http://localhost:3000/#/plugtent" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</a>
+                    <Link to="/plugtent" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</Link>
                 </div>
 
             </div>
@@ -65,7 +66,7 @@ const Home = () => {
                         to list their apartments for shortlet, while guests can browse through available listings,
                         book their stay, and enjoy a comfortable and hassle-free experience.
                     </p>
-                    <a href="#" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</a>
+                    <Link to="/starhomes" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</Link>
                 </div>
 
                 <div className="w-full max-w-[685px] order-first lg:order-last">
@@ -87,7 +88,7 @@ const Home = () => {
                         into their websites, users can efficiently collect visitor data,
                         enabling them to improve their marketing strategies.
                     </p>
-                    <a href="#" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</a>
+                    <Link to="/cashblast" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</Link>
                 </div>
 
             </div>
@@ -101,7 +102,7 @@ const Home = () => {
                         pads either by providing a design image or using an embedded
                         AI tool to generate one.
                     </p>
-                    <a href="#" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</a>
+                    <Link to="/custommailers" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</Link>
                 </div>
 
                 <div className="w-full max-w-[685px] order-first lg:order-last">
@@ -121,7 +122,7 @@ const Home = () => {
                         Parseat is an event management tool targeted at solving seat management challenges
                         for party/event organizers and individual party owners.
                     </p>
-                    <a href="#" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</a>
+                    <Link to="/parseat" className="text-[#8338EA] md:text-[24px] text-[16px] border-b border-[#8338EA]">Learn More</Link>
                 </div>
 
             </div>
