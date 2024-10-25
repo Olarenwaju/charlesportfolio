@@ -8,11 +8,13 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import { Link } from 'react-router-dom';
 
+
 const Home = () => {
   return (
     <>
         <section className="max-w-[1440px] mx-auto pt-[104.35px] px-5 ">
             <Hero />
+            
         </section>
 
         <section className="max-w-[1440px] mx-auto pt-20 px-10">  

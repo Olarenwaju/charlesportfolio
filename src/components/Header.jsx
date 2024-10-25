@@ -13,7 +13,10 @@ const Header = () => {
         setIsOpen(!isOpen)
     };
 
- 
+    const handleClick = () => {
+        setIsOpen(false)
+    }
+
 
   return (
     <div className="w-full fixed top-0 z-50 left-0 right-0">
@@ -27,10 +30,9 @@ const Header = () => {
                     isOpen ? "left-0" : "left-[-100%]"
                 } absolute top-0 left-0 z-10 shadow-xl px-5 transition-all h-screen w-[75%] sm:w-[50%] bg-black pt-[150px] gap-y-3 gap-x-[70px] items-start font-outfit font-semibold text-white text-[18px] leading-[24px]`}
             >
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contat Me</Link>
-                <Link to="/case-studies">Case Studies</Link>
+                <Link to="/" onClick={handleClick}>Home</Link>
+                <Link to="/about" onClick={handleClick}>About</Link>
+                <Link to="/case-studies" onClick={handleClick}>Case Studies</Link>
             </ul>
 
             <ul className="hidden lg:flex gap-x-[70px] items-center w-fit font-dmsans text-[#ffffffb4] font-normal text-[18px] leading-[24px] uppercase">
@@ -50,14 +52,6 @@ const Header = () => {
                     ></div>
                 </Link>
 
-                <Link to="/contact">Contact Me
-                    <div
-                        className={`${
-                            pathname === "/contact" && "border border-[#fff]"
-                        } w-[80%] rounded-full mx-auto mt-1`}
-                    ></div>
-                </Link>
-
                 <Link to="/case-studies">Case Studies
                     <div
                         className={`${
@@ -65,8 +59,6 @@ const Header = () => {
                         } w-[80%] rounded-full mx-auto mt-1`}
                     ></div>
                 </Link>
-
-
             </ul>
 
             <button
@@ -102,8 +94,6 @@ const Header = () => {
 						</svg>
 					)}
 			</button>
-        
-            
         </div>
 
     </div>

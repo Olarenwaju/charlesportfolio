@@ -12,7 +12,7 @@ const Imagefade = () => {
     useEffect(() => {
         const interval = setInterval(() => {
           setCurrentImage((prev) => (prev + 1) % images.length);
-          console.log(currentImage);
+          
         }, 3000); // Change image every 3 seconds
     
         return () => clearInterval(interval);
