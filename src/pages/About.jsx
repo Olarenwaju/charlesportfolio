@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import aboutimg from "../assets/img/about-hero.png"
 //import charlesavatarimg from "../assets/img/charlesavater-img.png"
 import creativity from "../assets/img/aboutcreativity-img.png"
@@ -5,9 +6,11 @@ import problemsolverimg from "../assets/img/problemsolver-img.png"
 import emphathy from "../assets/img/emphathy-img.png"
 import userresearch from "../assets/img/userresearch-img.png"
 import experience from "../assets/img/experience-img.png"
-import zuricert from "../assets/img/zuricerts-img.png"
+//import zuricert from "../assets/img/zuricerts-img.png"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
+import ImageFade from "../components/Imagefade"
+
 
 
 const About = () => {
@@ -22,11 +25,11 @@ const About = () => {
           </div>
         </div>
         
-        <p className="md:pt-[115px] pt-[80px] italic md:text-[64px] sm:text-[45px] font-dmsans text-[24px] text-center sm:font-semibold font-medium md:leading-[80px] sm:leading-[40px] leading-[30px] pb-10 sm:pb-[20]">
+        <p className="md:pt-[115px] pt-[80px] italic md:text-[64px] sm:text-[45px] font-dmsans text-[30px] text-center sm:font-semibold font-medium md:leading-[80px] sm:leading-[40px] leading-[30px] pb-10 sm:pb-[20]">
           “If you think good design is expensive you should look at the cost of bad design.”
         </p>
-
-        <p className="max-w-[1200px] mx-auto text-left font-dmsans sm:text-[32px] text-[16px] font-normal text-[#ffffffcb] md:leading-[70px] leading-[32px] sm:pb-16 pb-10">
+        
+        <p className="max-w-[1200px] mx-auto ms:text-left text-center font-dmsans sm:text-[30px] text-[20px] font-normal text-[#ffffffcb] md:leading-[70px] sm:-leading-[50px] leading-[40px] sm:pb-16 pb-10">
           I am a user focused and data driven Product designer specialized in creating seamless user experience with a touch of aesthetics.
           I help businesses and companies reach their goals by designing user-centric digital products & interactive experiences.
           My thirst and persistent quest for knowledge as a designer has given me the rquired but in-depth knowledge required
@@ -34,7 +37,7 @@ const About = () => {
           the business goal in mind.
         </p>
 
-        <p className="max-w-[1200px] mx-auto text-left font-dmsans sm:text-[32px] text-[16px] font-normal text-[#ffffffcb] md:leading-[70px] leading-[32px]">
+        <p className="max-w-[1200px] mx-auto ms:text-left text-center font-dmsans sm:text-[30px] text-[20px] font-normal text-[#ffffffcb] md:leading-[70px] sm:-leading-[50px] leading-[40px] sm:pb-16 pb-10">
           I’m a critical thinker and an empathy driven product designer that uses accumulated experience in UX design to create/facilitate usable, 
           functional & delightful digital products.
         </p>
@@ -48,53 +51,162 @@ const About = () => {
           Skills
         </p>
 
-        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-x-5 gap-y-5">
+        <div className="overflow-hidden w-full">
 
-          <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px]">
+          <div className="flex space-x-5 gap-y-5 animate-scrol" style={{animation: 'scroll 15s linear infinite', width: 'calc(200% + 16px)',}}>
 
-            <img src={creativity} alt="creativity"/>
-            <p className="text-[24px] font-bold pb-5">Creativity</p>
-            <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
-              My creative skill empowers me with the ability to interpret and build a product from ideation to reality using the information
-              a client or stakeholder provides.
-            </p>
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={creativity} alt="creativity"/>
+              <p className="text-[24px] font-bold pb-5">Creativity</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                My creative skill empowers me with the ability to interpret and build a product from ideation to reality using the information
+                a client or stakeholder provides.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={problemsolverimg} alt="problemsolver"/>
+              <p className="text-[24px] font-bold pb-5">Problem Solver</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                This enable me easily identify and eliminate flaws in a product. 
+                It enables me as a designer to consider the problems different ways.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={emphathy} alt="emphathy"/>
+              <p className="text-[24px] font-bold pb-5">Empathy</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                I possess skills that enable me understand my users. This skill also enable me use the information gotten to produce 
+                innovative products that meet those needs.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={userresearch} alt="user"/>
+              <p className="text-[24px] font-bold pb-5">User Research</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                I implement the use of user research to identify consumer needs. It helps me design a product which provides a solution for
+                users that satisfy market demands.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={userresearch} alt="user"/>
+              <p className="text-[24px] font-bold pb-5">Good Communication</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                While designing a product, I ensure that I communicate effectively with the team to delegate tasks and complete the project on or 
+                before its deadline
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={userresearch} alt="user"/>
+              <p className="text-[24px] font-bold pb-5">Team Work</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                I ensure that I collaborate with other designers and developers to create solutions that will enable us produce a functional
+                and aesthetically looking product.
+              </p>
+
+            </div>
+
+            {/* Repeat the boxes again to create the illusion of an infinite loop */}
+
+            {/* <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={creativity} alt="creativity"/>
+              <p className="text-[24px] font-bold pb-5">Creativity</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                My creative skill empowers me with the ability to interpret and build a product from ideation to reality using the information
+                a client or stakeholder provides.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={problemsolverimg} alt="problemsolver"/>
+              <p className="text-[24px] font-bold pb-5">Problem Solver</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                This enable me easily identify and eliminate flaws in a product. 
+                It enables me as a designer to consider the problems different ways.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={emphathy} alt="emphathy"/>
+              <p className="text-[24px] font-bold pb-5">Empathy</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                I possess skills that enable me understand my users. This skill also enable me use the information gotten to produce 
+                innovative products that meet those needs.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={userresearch} alt="user"/>
+              <p className="text-[24px] font-bold pb-5">User Research</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                I implement the use of user research to identify consumer needs. It helps me design a product which provides a solution for
+                users that satisfy market demands.
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={userresearch} alt="user"/>
+              <p className="text-[24px] font-bold pb-5">Good Communication</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                While designing a product, I ensure that I communicate effectively with the team to delegate tasks and complete the project on or 
+                before its deadline
+              </p>
+
+            </div>
+
+            <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px] flex-shrink-0">
+
+              <img src={userresearch} alt="user"/>
+              <p className="text-[24px] font-bold pb-5">Team Work</p>
+              <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
+                I ensure that I collaborate with other designers and developers to create solutions that will enable us produce a functional
+                and aesthetically looking product.
+              </p>
+
+            </div> */}
 
           </div>
 
-          <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px]">
-
-            <img src={problemsolverimg} alt="problemsolver"/>
-            <p className="text-[24px] font-bold pb-5">Problem Solver</p>
-            <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
-              This enable me easily identify and eliminate flaws in a product. 
-              It enables me as a designer to consider the problems different ways.
-            </p>
-
-          </div>
-
-          <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px]">
-
-            <img src={emphathy} alt="emphathy"/>
-            <p className="text-[24px] font-bold pb-5">Empathy</p>
-            <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
-              I possess skills that enable me understand my users. This skill also enable me use the information gotten to produce 
-              innovative products that meet those needs.
-            </p>
-
-          </div>
-
-          <div className="max-w-[300px] w-full bg-[#101010] pt-5 pb-12 px-5 rounded border-b-[#8338EA] border-b-[3px]">
-
-            <img src={userresearch} alt="user"/>
-            <p className="text-[24px] font-bold pb-5">User Research</p>
-            <p className="text-[16px] font-normal font-dmsans text-[#ADADAD]">
-              I implement the use of user research to identify consumer needs. It helps me design a product which provides a solution for
-              users that satisfy market demands.
-            </p>
-
-          </div>
+          <style jsx="true">
+          {`
+            @keyframes scroll {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+          `}
+          </style>
 
         </div>
+
+        
 
       </section>
 
@@ -149,13 +261,13 @@ const About = () => {
           Certifications
         </p> 
 
-        <div className="max-w-[1400px] w-full mx-auto flex flex-row justify-center">
-          <img src={zuricert} className="w-full" alt="cert" />
+        <div className="max-w-[1150px] w-full mx-auto flex flex-row justify-center">
+          <ImageFade />
         </div>
 
       </section>
 
-      <section className="px-10 md:pt-[150px] pt-[100px] pb-20">
+      <section className="px-10 pb-20">
 
         <Contact />
 

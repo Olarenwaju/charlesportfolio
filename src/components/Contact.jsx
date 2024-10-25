@@ -4,7 +4,7 @@ import contactbg from "../assets/img/contact-img.png";
 
 const Contact = () => {
   return (
-    <div style={{backgroundImage: `url(${contactbg})`}} className="w-full md:max-w-[1212px] sm:max-w-[640px] max-w-[400px] mx-auto mb-10 bg-cover bg-center md:py-20 sm:py-14 py-14 ">
+    <div style={{backgroundImage: `url(${contactbg})`}} className="w-full md:max-w-[1100px] mx-auto mb-10 bg-cover bg-center md:py-20 sm:py-14 py-14 ">
         <div className="text-center">
           <p className="sm:text-[35px] text-[16px] tracking-wide font-semibold"> Connect With Me </p>
           <p className="sm:text-[24px] text-[12px] font-medium text-[#8338EA]"> DesignHemperor</p>

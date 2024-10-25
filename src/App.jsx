@@ -6,6 +6,7 @@ import Parseat from "./pages/Parseat";
 import Plugtent from "./pages/Plugtent";
 import Starhomes from "./pages/Starhomes";
 import Cashblast from "./pages/Cashblast";
+import Custommailers from "./pages/Custommailers";
 
 
 
@@ -44,6 +45,11 @@ const App = () => {
           <Route
             path="/cashblast"
             element={<Cashblast/>}
+          />  
+
+          <Route
+            path="/custommailers"
+            element={<Custommailers/>}
           />    
 
         </Routes>
