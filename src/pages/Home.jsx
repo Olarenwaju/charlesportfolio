@@ -8,8 +8,11 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import { Link } from 'react-router-dom';
 
+import {motion} from "framer-motion"
+
 
 const Home = () => {
+    
   return (
     <>
         <section className="max-w-[1440px] mx-auto pt-[104.35px] px-5 ">
@@ -19,13 +22,17 @@ const Home = () => {
 
         <section className="max-w-[1440px] mx-auto pt-20 px-10">  
             <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center">
-                <div className="w-full max-w-[570px]">
+                <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full max-w-[570px]">
                     <p className="text-left text-white sm:font-bold font-semibold text-[16px] sm:text-[30px] pb-5 md:pb-10 font-dmsans leading-[41px] tracking-wider"> 
                         -Charles Emmanuel, Product designer.
                     </p>
 
                     <img src={homegif} className="" alt="img" />
-                </div>
+                </motion.div>
 
                 <div className="max-w-[700px] w-full">
                     <p className="font-dmsans text-[24px] md:text-[60px] lg:text-[90px] font-medium xl:leading-[100px] md:leading-[80px] leading-[50px] pb-4">Design is how it works</p>
