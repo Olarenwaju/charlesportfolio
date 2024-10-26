@@ -29,7 +29,7 @@ const Home = () => {
 
                 <div className="max-w-[700px] w-full">
                     <p className="font-dmsans text-[24px] md:text-[60px] lg:text-[90px] font-medium xl:leading-[100px] md:leading-[80px] leading-[50px] pb-4">Design is how it works</p>
-                    <p className="font-dm md:text-[24px] text-[16px] text-[#CCCCCC] font-normal md:leading-[31px] leading-[25px]">
+                    <p className="font-dm md:text-[24px] text-[20px] text-[#CCCCCC] font-normal md:leading-[31px] leading-[25px] font-dmsans">
                         I help businesses and companies reach their goals by designing 
                         user-centric digital products & interactive but seamless experiences.
                     </p>
@@ -39,7 +39,7 @@ const Home = () => {
             
         </section>
 
-        <section className="max-w-[1440px] mx-auto pt-[104.35px] px-10">
+        <section className="max-w-[1440px] mx-auto pt-[104.35px] px-10 font-dmsans">
             <p className="uppercase lg:text-[100px] md:text-[80px] sm:text-[50px] text-[32px] font-semibold lg:leading-[160px] md:leading-[100px] leading-[40px] pb-10 sm:pb-[20]">Selected Projects</p>
             
             <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
@@ -48,8 +48,8 @@ const Home = () => {
                 </div>
 
                 <div className="w-full max-w-[700px]">
-                    <p className="font-dmsans text-[24px] md:text-[60px] lg:text-[90px] font-medium xl:leading-[100px] md:leading-[80px] leading-[50px] pb-4">Plugtent</p>
-                    <p className="font-dmsans sm:text-[24px] text-[16px] font-normal sm:leading-[35px] leading-[25px] text-[#CCCCCC] pb-3">
+                    <p className="text-3xl md:text-[60px] lg:text-[90px] leading-10 md:leading-[80px] font-normal pb-5 tracking-wider">Plugtent</p>
+                    <p className="font-dmsans sm:text-[24px] text-[20px] font-normal sm:leading-[35px] leading-[25px] text-[#CCCCCC] pb-3">
                         A marketplace-model platform that allows businesses to leverage the
                         creativity and audiences of content creators to market and advertise their products and services.
                     </p>
@@ -61,8 +61,8 @@ const Home = () => {
             <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
 
                 <div className="w-full max-w-[700px]">
-                    <p className="font-dmsans text-[24px] md:text-[60px] lg:text-[90px] font-medium xl:leading-[100px] md:leading-[80px] leading-[50px] pb-4">Star Homes</p>
-                    <p className="font-dmsans sm:text-[24px] text-[16px] font-normal sm:leading-[35px] leading-[25px] text-[#CCCCCC] pb-3">
+                    <p className="text-3xl md:text-[60px] lg:text-[90px] leading-10 md:leading-[80px] font-normal pb-5 tracking-wider">Star Homes</p>
+                    <p className="sm:text-[24px] text-[20px] font-normal sm:leading-[35px] leading-[25px] text-[#CCCCCC] pb-3">
                         Star Homes is a marketplace-model platform for luxurious and affordable short-term
                         apartment rentals in Lagos. The  platform allows the admin (Star Homes)
                         to list their apartments for shortlet, while guests can browse through available listings,
@@ -83,8 +83,8 @@ const Home = () => {
                 </div>
 
                 <div className="w-full max-w-[700px]">
-                    <p className="font-dmsans text-[24px] md:text-[60px] lg:text-[90px] font-medium xl:leading-[100px] md:leading-[80px] leading-[50px] pb-4">Vital Edge<br/>(Re -design)</p>
-                    <p className="font-dmsans sm:text-[24px] text-[16px] font-normal sm:leading-[35px] leading-[25px] text-[#CCCCCC] pb-3">
+                    <p className="text-3xl md:text-[60px] lg:text-[90px] leading-10 md:leading-[80px] font-normal pb-5 tracking-wider">Vital Edge<br/>(Re -design)</p>
+                    <p className="sm:text-[24px] text-[20px] font-normal sm:leading-[35px] leading-[25px] text-[#CCCCCC] pb-3">
                         Vital Edge is a lead generation platform empowering businesses
                         to effortlessly gather leads. By integrating a simple code snippet
                         into their websites, users can efficiently collect visitor data,
@@ -98,8 +98,8 @@ const Home = () => {
             <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
 
                 <div className="w-full max-w-[700px]">
-                    <p className="font-dmsans text-[24px] md:text-[60px] lg:text-[90px] font-medium xl:leading-[100px] md:leading-[80px] leading-[50px] pb-4">Custom Mailers</p>
-                    <p className="font-dmsans sm:text-[24px] text-[16px] font-normal sm:leading-[31px] leading-[25px] text-[#CCCCCC] pb-3">
+                    <p className="text-3xl md:text-[60px] lg:text-[90px] leading-10 md:leading-[80px] font-normal pb-5 tracking-wider">Custom Mailers</p>
+                    <p className="text-[20px] sm:text-[24px]  font-normal sm:leading-[31px] leading-[25px] text-[#CCCCCC] pb-3">
                         An e-commerce platform that allows users to order fully customizable gaming mouse 
                         pads either by providing a design image or using an embedded
                         AI tool to generate one.
@@ -119,8 +119,8 @@ const Home = () => {
                 </div>
 
                 <div className="w-full max-w-[700px]">
-                    <p className="font-dmsans text-[24px] md:text-[60px] lg:text-[90px] font-medium xl:leading-[100px] md:leading-[80px] leading-[50px] pb-4">Parseat</p>
-                    <p className="font-dmsans sm:text-[24px] text-[16px] font-normal sm:leading-[31px] leading-[25px] text-[#CCCCCC] pb-3">
+                    <p className="text-3xl md:text-[60px] lg:text-[90px] leading-10 md:leading-[80px] font-normal pb-5 tracking-wider">Parseat</p>
+                    <p className="text-[20px] sm:text-[24px] font-normal sm:leading-[31px] leading-[25px] text-[#CCCCCC] pb-3">
                         Parseat is an event management tool targeted at solving seat management challenges
                         for party/event organizers and individual party owners.
                     </p>

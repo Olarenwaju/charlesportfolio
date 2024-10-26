@@ -4,14 +4,14 @@ import Button from "./Button"
 
 const Hero = () => {
   return (
-    <div className="px-5 flex flex-col lg:flex-row gap-x-4 gap-y-16 lg:justify-between items-center py-10 md:py-[20px]">
+    <div className="px-5 flex flex-col lg:flex-row gap-x-4 gap-y-16 lg:justify-between items-center py-10 md:py-[20px] font-dmsans">
         <div className="w-full max-w-[929px] font-dmsans pt-5">
-            <div className="text-white sm:text-[90px] text-[36px] sm:leading-[124.99px] leading-[46px] pb-5 font-bold tracking-wider">
+            <div className="text-white sm:text-[90px] text-[40px] sm:leading-[124.99px] leading-[46px] pb-5 font-bold tracking-wider">
                 <p className="">Hi, I'm</p>
                 <p className="">Charles Emmanuel.</p>
             </div>
             
-            <p className="text-[#50DFB4] sm:text-[40px] text-[16px] sm:leading-[52px] leading-[20px] font-normal">"A product designer that loves creating seamless
+            <p className="text-[#50DFB4] sm:text-[40px] text-[20px] sm:leading-[52px] leading-[20px] font-normal">"A product designer that loves creating seamless
                 user experience with a touch of aesthetics."
             </p>
 
