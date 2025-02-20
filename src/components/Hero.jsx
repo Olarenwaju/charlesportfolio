@@ -1,8 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import heroimg from "../assets/img/hero-img.png"
+//import heroimg from "../assets/img/hero-img.png"
+import herogif from "../assets/img/Hemperor-head-gif.gif"
 import Button from "./Button"
 import {motion} from "framer-motion"
 import { useInView } from "react-intersection-observer";
+import greenblur from "../assets/img/greenblur.png"
 
 
 const Hero = () => {
@@ -25,7 +27,8 @@ const Hero = () => {
         transition={{ duration: 0.5 }}
         className="px-5 flex flex-col lg:flex-row gap-x-4 gap-y-16 lg:justify-between items-center py-10 md:py-[20px] font-dmsans">
 
-        <div className="w-full max-w-[929px] font-dmsans pt-5">
+        <div className="relative w-full max-w-[929px] font-dmsans pt-5">
+            <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
             <div className="text-white sm:text-[90px] text-[40px] sm:leading-[124.99px] leading-[46px] pb-5 font-bold tracking-wider">
                 <motion.p >Hi, I'm</motion.p>
                 <motion.p variants={textVariant} transition={{ duration: 0.5, delay: 0.4 }}>Charles Emmanuel.</motion.p>
@@ -56,7 +59,7 @@ const Hero = () => {
         <motion.img 
             variants={textVariant} transition={{ duration: 0.5, delay: 0.4 }}
             className="w-full max-w-[200px] sm:max-w-[350px]"
-            src={heroimg}
+            src={herogif}
         />
     </motion.div>
   )

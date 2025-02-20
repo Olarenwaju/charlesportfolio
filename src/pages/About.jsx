@@ -11,20 +11,35 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import ImageFade from "../components/Imagefade"
 
+import Backbutton from "../components/Backbutton"
+import greenblur from "../assets/img/greenblur.png"
+import SemiCircles from "../components/SemiCircles"
+import purpleblur from "../assets/img/purpleblur.png"
+
+
 
 
 const About = () => {
   return (
     <>
-      <section className="max-w-[1440px] w-full mx-auto pt-[150px] px-5">
+      <section className="relative max-w-[1440px] w-full mx-auto pt-[150px] px-5 overflow-hidden">
+        <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+
+        <div className="fixed z-50">
+          <Backbutton/>
+        </div>
+
         <div className="relative">
-          <img src={aboutimg} className="w-full mx-auto" alt="abt"/>
+          <img src={aboutimg} className="w-full mx-auto pt-20" alt="abt"/>
 
           <div className="absolute top-28 left-28">
            {/* <img src={charlesavatarimg} className="w-full " alt="avt"/> */}
           </div>
         </div>
-        
+
+        <img className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2" src={purpleblur} alt="img" />
+ 
+
         <p className="md:pt-[115px] pt-[80px] italic md:text-[64px] sm:text-[45px] font-dmsans text-[30px] text-center sm:font-semibold font-medium md:leading-[80px] sm:leading-[40px] leading-[30px] pb-10 sm:pb-[20]">
           “If you think good design is expensive you should look at the cost of bad design.”
         </p>
@@ -42,10 +57,11 @@ const About = () => {
           functional & delightful digital products.
         </p>
 
-
       </section>
 
-      <section className="max-w-[1300px] w-full mx-auto md:pt-[150px] pt-[100px]  px-5 pb-14">
+      <section className="max-w-[1300px] relative w-full mx-auto md:pt-[150px] pt-[100px]  px-5 pb-14 overflow-hidden">
+
+        <SemiCircles />
 
         <p className="uppercase lg:text-[125px] md:text-[100px] sm:text-[80px] text-[40px] font-dmsans font-bold text-left pb-10">
           Skills
@@ -211,7 +227,10 @@ const About = () => {
       </section>
 
 
-      <section className="max-w-[1300px] w-full mx-auto md:pt-[150px] pt-[100px] px-5 pb-14">
+      <section className="max-w-[1300px] relative w-full mx-auto md:pt-[150px] pt-[100px] px-5 pb-14 overflow-hidden">
+
+        <SemiCircles />
+
         <p className="uppercase lg:text-[125px] md:text-[100px] sm:text-[80px] text-[40px] font-dmsans font-bold text-left pb-10">
           Experiences
         </p>  
@@ -235,11 +254,30 @@ const About = () => {
 
         </div>
 
+        
+        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between  items-center text-left gap-x-5 gap-y-5 font-dmsans pb-14 pt-14 border-b border-[#ffffff57]">
+
+          <p className="w-full">
+            <img src={experience} alt="exp"/>
+          </p>
+
+          <div className=" w-full">          
+            <p className="text-[30px] font-bold leading-[33px] tracking-wider">Product Designer</p>
+            <p className="text-[#50DFB4] text-[15px] font-normal leading-9">Star Homes(May 2024 - Oct 2024)</p>
+          </div>
+
+          <p className=" w-full text-[#ADADAD] text-[16px] font-normal">
+            Starhomes is a trusted provider of shortlet accomodation services, known for delivering high-quality services to guests across Nigeria.
+          </p>
+
+        </div>
+
         <div className="max-w-[1200px] mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-x-5 gap-y-5 font-dmsans pt-14">
 
           <p className="w-full">
             <img src={experience} alt="exp"/>
           </p>
+
 
           <div className=" w-full">          
             <p className="text-[30px] font-bold leading-[33px] tracking-wider">Product Designer</p>
@@ -256,7 +294,8 @@ const About = () => {
 
       </section>
 
-      <section className="max-w-[1300px] w-full mx-auto md:pt-[150px] pt-[100px] px-5 sm:pb-40 pb-14">
+      <section className="max-w-[1300px] w-full mx-auto md:pt-[150px] pt-[100px] px-5 sm:pb-40 pb-14 ">
+        
         <p className="uppercase lg:text-[125px] md:text-[100px] sm:text-[80px] text-[40px] font-dmsans font-bold text-left pb-10">
           Certifications
         </p> 

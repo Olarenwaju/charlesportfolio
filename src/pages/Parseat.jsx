@@ -12,13 +12,24 @@ import lowfidelity from "../assets/img/low-fidelity1.png"
 import highfidelity from "../assets/img/high-fidelity.png"
 
 import Button from "../components/Button"
+import SemiCircles from "../components/SemiCircles"
+import Backbutton from "../components/Backbutton"
+import greenblur from "../assets/img/greenblur.png"
+//import purpleblur from "../assets/img/purpleblur.png"
+
 
 
 const Parseat = () => {
   return (
     <>
-        <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
-            <img src={parseathero} className="w-full mx-auto" alt="abt"/>
+        <section className="relative max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
+            <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+
+            <div className="fixed z-50">
+                <Backbutton/>
+            </div>
+
+            <img src={parseathero} className="w-full mx-auto pt-20" alt="abt"/>
 
             <p className="text-[24px] text-[#CCCCCC] pb-3 pt-14">Charles Emmanuel</p>
             <p className="text-[40px] sm:text-[55px] font-bold leading-[50px] sm:leading-[78px] tracking-wider pb-6">Case Study For Parseat</p>
@@ -44,6 +55,7 @@ const Parseat = () => {
                 </div>
                 
             </div>
+            
 
         </section>
 
@@ -58,7 +70,8 @@ const Parseat = () => {
 
         </section>
 
-        <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
+        <section className="relative max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans overflow-hidden">
+            <SemiCircles />
             <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5 sm:pb-10">Common Issues With Existing Solutions</p>
 
             <div className="flex flex-col md:flex-row items-center max-w-[1200px] mx-auto gap-x-10">
@@ -109,7 +122,8 @@ const Parseat = () => {
 
         </section>
 
-        <section className="max-w-[1300px] w-full mx-auto pt-[100px] px-5 font-dmsans">
+        <section className="relative max-w-[1300px] w-full mx-auto pt-[100px] px-5 font-dmsans overflow-hidden">
+            <SemiCircles />
             <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5 sm:pb-10">What are event organizers saying ?</p>
 
             <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal">

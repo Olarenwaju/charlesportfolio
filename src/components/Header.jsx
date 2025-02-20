@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
     //const [isShrinking, setIsShrinking] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-
+    //const [isDropDownOpen, setIsDropDownOpen] = useState(false);
     const location = useLocation();
     const { pathname } = location;
 
@@ -32,7 +32,7 @@ const Header = () => {
             >
                 <Link to="/" onClick={handleClick}>Home</Link>
                 <Link to="/about" onClick={handleClick}>About</Link>
-                <Link to="/case-studies" onClick={handleClick}>Case Studies</Link>
+                <Link to="/contact" onClick={handleClick}>Contact Me</Link>
             </ul>
 
             <ul className="hidden lg:flex gap-x-[70px] items-center w-fit font-dmsans text-[#ffffffb4] font-normal text-[18px] leading-[24px] uppercase">
@@ -52,7 +52,7 @@ const Header = () => {
                     ></div>
                 </Link>
 
-                <Link to="/case-studies">Case Studies
+                <Link to="/contact">Contact Me
                     <div
                         className={`${
                             pathname === "/case-studies" && "border border-[#fff]"
