@@ -414,7 +414,7 @@ const Starhomes = () => {
             <div className="bg-[#1A1A1A] p-10 rounded flex flex-col md:flex-row md:justify-between justify-center items-center gap-4">
                 <div className="pr-0 sm:pr-20">
                     <p className="text-2xl text-white font-normal pb-5">A link to the live version:</p>
-                    <a href="https://www.plugtent.com/" className="text-3xl md:text-6xl text-[#8338EA] font-semibold tracking-wide" target="_blank">Starhomes Website</a>
+                    <a href="https://www.starhomeschateau.com/" className="text-3xl md:text-6xl text-[#8338EA] font-semibold tracking-wide" target="_blank">Starhomes Website</a>
                 </div>
 
                 

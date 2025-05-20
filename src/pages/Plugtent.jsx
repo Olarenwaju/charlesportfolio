@@ -22,11 +22,21 @@ import plugtentlogo from "../assets/img/plugtent-logo.png"
 
 import Button from "../components/Button"
 
+import greenblur from "../assets/img/greenblur.png"
+import Backbutton from "../components/Backbutton";
+
+
+
 const Plugtent = () => {
   return (
     <>
         <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
-            <img src={plugtentheroimg } className="w-full mx-auto" alt="abt"/>
+            <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+            <div className="fixed z-50">
+                <Backbutton/>
+            </div>
+         
+            <img src={plugtentheroimg } className="w-full mx-auto pt-20" alt="abt"/>
 
                 <p className="text-[24px] text-[#CCCCCC] pb-3 pt-14">Charles Emmanuel</p>
                 <p className="text-[40px] sm:text-[55px] font-bold leading-[50px] sm:leading-[78px] tracking-wider pb-6">Case Study For Plugtent</p>

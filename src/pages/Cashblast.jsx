@@ -277,7 +277,7 @@ const Cashblast = () => {
       <div className="bg-[#1A1A1A] px-10 py-16 rounded flex flex-col md:flex-row md:justify-between justify-center items-center gap-4">
         <div className="pr-20">
           <p className="text-2xl text-white font-normal pb-5">A link to the live version:</p>
-          <a href="https://www.plugtent.com/" className="text-3xl md:text-6xl text-[#1D4ED8] font-semibold tracking-wide" target="_blank">Cashblast Website</a>
+          <a href="https://www.mycashblast.com/" className="text-3xl md:text-6xl text-[#1D4ED8] font-semibold tracking-wide" target="_blank">Cashblast Website</a>
         </div>
       </div>
 
