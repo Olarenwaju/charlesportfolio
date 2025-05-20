@@ -28,6 +28,9 @@ import feed11 from "../assets/img/feed11.png";
 import feed12 from "../assets/img/feed12.png";
 import starhomeslogo from "../assets/img/starhomeslogo.png";
 import Button from "../components/Button";
+import Backbutton from "../components/Backbutton";
+import greenblur from "../assets/img/greenblur.png"
+
 
 
 
@@ -35,7 +38,11 @@ const Starhomes = () => {
   return (
     <>
         <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
-            <p className="text-xl sm:text-2xl text-[#cccccc] pb-10">Star Homes - Case Study</p>
+            <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+            <div className="fixed z-50">
+                <Backbutton/>
+            </div>
+            <p className="text-xl sm:text-2xl text-[#cccccc] pb-10 pt-20">Star Homes - Case Study</p>
             <p className="text-[30px] sm:text-[40px] md:text-[55px] font-semibold pb-16">A Luxurious and Affordable Solution for Short-Term Accommodation Needs.</p>
 
             <img src={plugtentheroimg } className="w-full mx-auto pb-10" alt="abt"/>

@@ -7,16 +7,16 @@ import Plugtent from "./pages/Plugtent";
 import Starhomes from "./pages/Starhomes";
 import Cashblast from "./pages/Cashblast";
 import Custommailers from "./pages/Custommailers";
-
-
-
-
+import Contactme from "./pages/Contactme";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 const App = () => {
   return (
-    <div> 
+    <div>
+      
       <Router>
+        <ScrollToTop /> 
         <Header />
         <Routes>
 
@@ -54,6 +54,12 @@ const App = () => {
             path="/custommailers"
             element={<Custommailers/>}
           />    
+
+           <Route
+            path="/contact"
+            element={<Contactme/>}
+          />    
+
 
         </Routes>
       </Router>
