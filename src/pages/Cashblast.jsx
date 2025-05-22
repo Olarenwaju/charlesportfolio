@@ -18,13 +18,22 @@ import cashblastscreen2 from "../assets/img/cashblastscreen2.png";
 import cashblastscreen3 from "../assets/img/cashblastscreen3.png";
 import Button from "../components/Button";
 
+import Backbutton from "../components/Backbutton";
+import greenblur from "../assets/img/greenblur.png";
+
 
 const Cashblast = () => {
   return (
     <>
     
     <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
-      <img src={cashblasthero} className="w-full mx-auto" alt="abt"/>
+      <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+
+      <div className="fixed z-50">
+       <Backbutton/>
+      </div>
+
+      <img src={cashblasthero} className="pt-20 w-full mx-auto" alt="abt"/>
 
       <div className="pt-16 md:pt-28">
         <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5 sm:pb-10">Overview</p>

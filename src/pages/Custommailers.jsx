@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import custommailershero from "../assets/img/custommailers-img.png"
+import custommailershero from "../assets/img/custommailersmainimg.png"
 import custommailerprocess from "../assets/img/custommailersprocess-img.png"
 import custommailersflow from "../assets/img/custommailersflow-img.png"
 import custommailersdesign1 from "../assets/img/custommailersdesign-img1.png"
@@ -14,12 +14,23 @@ import ordertracking from "../assets/img/order-img.png"
 import signin from "../assets/img/signin.png"
 import Button from "../components/Button"
 
+//import SemiCircles from "../components/SemiCircles";
+import Backbutton from "../components/Backbutton";
+import greenblur from "../assets/img/greenblur.png";
+
+
 
 const Custommailers = () => {
   return (
     <>
-        <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
-            <p className="text-[30px] sm:text-[40px] md:text-[55px] font-semibold pb-16">Custom Mailers Depot: An e-commerce platform for ordering fully customizable poly mailers</p>
+        <section className="relative max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
+            <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+
+            <div className="fixed z-50">
+                <Backbutton/>
+            </div>
+
+            <p className="text-[30px] sm:text-[40px] md:text-[55px] pt-20 font-semibold pb-16">Custom Mailers Depot: An e-commerce platform for ordering fully customizable poly mailers</p>
 
             <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal">
                 This case study explores a design sprint focused on crafting a e-commerce solution. 

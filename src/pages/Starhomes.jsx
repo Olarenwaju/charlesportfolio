@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import plugtentheroimg from "../assets/img/plugtent-hero.png"
+
+import starhomesheroimg from "../assets/img/starhomesmainimg.png"
 import researchemoji1 from "../assets/img/researchemoji1.png"
 import researchemoji2 from "../assets/img/researchemoji2.png"
 import researchemoji3 from "../assets/img/researchemoji3.png"
@@ -45,7 +46,7 @@ const Starhomes = () => {
             <p className="text-xl sm:text-2xl text-[#cccccc] pb-10 pt-20">Star Homes - Case Study</p>
             <p className="text-[30px] sm:text-[40px] md:text-[55px] font-semibold pb-16">A Luxurious and Affordable Solution for Short-Term Accommodation Needs.</p>
 
-            <img src={plugtentheroimg } className="w-full mx-auto pb-10" alt="abt"/>
+            <img src={starhomesheroimg } className="w-full mx-auto pb-10" alt="abt"/>
 
             <div className="flex md:flex-row flex-col gap-x-8 gap-y-8">
                 <div className="max-w-[388px]">
