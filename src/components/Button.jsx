@@ -1,10 +1,14 @@
 import PropTypes from 'prop-types';
 import { useState } from "react";
 
-const Button = ({ text, classname }) => {
+const Button = ({ text, classname, onClick }) => {
 	const [isShrinking, setIsShrinking] = useState(false);
 
-	const handleClick = () => {
+	const handleClick = (e) => {
+		if (onClick) {
+			onClick(e);
+			return;
+		}
 		setIsShrinking(true);
 		setTimeout(() => {
 			setIsShrinking(false);
@@ -24,6 +28,7 @@ const Button = ({ text, classname }) => {
 Button.propTypes = {
     text: PropTypes.string.isRequired,
     classname: PropTypes.string,
+    onClick: PropTypes.func,
 };
 
 export default Button;

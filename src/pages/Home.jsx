@@ -93,19 +93,22 @@ const Home = () => {
         </section>
 
         <motion.section
-            className="max-w-[1440px] relative mx-auto pt-[104.35px] px-10 font-dmsans overflow-hidden"
+            className="max-w-[1440px] relative mx-auto bg-black pt-[104.35px] px-10 font-dmsans overflow-hidden"
             variants={textVariant}
             initial="hidden"
             animate={forthInView ? "visible" : "hidden"}
             transition={{ duration: 0.5 }}
             ref={forthRef}> 
 
+            {/* <div className="absolute inset-0 bg-black -z-50"></div> */}
+            
+
             <SemiCircles />         
 
             <motion.p 
                 variants={textVariant}
                 transition={{ duration: 0.5, dela:0.2 }}
-                className="uppercase lg:text-[100px] md:text-[80px] sm:text-[50px] text-[32px] font-semibold lg:leading-[160px] md:leading-[100px] leading-[40px] pb-10 sm:pb-[20] tracking-wider">
+                className=" uppercase lg:text-[100px] md:text-[80px] sm:text-[50px] text-[32px] font-semibold lg:leading-[160px] md:leading-[100px] leading-[40px] pb-10 sm:pb-[20] tracking-wider">
                     Selected Projects
             </motion.p>
 
@@ -115,8 +118,8 @@ const Home = () => {
                 <div className="w-full max-w-[685px]">
                     <motion.img  
                         src={plugtentimg} 
-                        className="" 
                         alt="img" 
+                        className="z-20"
                         variants={textVariant}
 					    transition={{ duration: 0.5, delay: 0.4 }}
                     />

@@ -14,8 +14,8 @@ const Footer = () => {
             </div>
 
             <div>
-                <Button text="Get in touch" classname="bg-[#8338EA] hover:bg-[#8338EA]/90 md:px-[100px] w-full font-dmsans text-center md:py-[20px] text-[16px] md:text-[20px] md:font-bold px-[25px] py-[15px] tracking-wider"/>
-                <p className="underline underline-offset-4 sm:text-[20px] text-[13px] pt-5 text-center lg:text-right">Charlesemmanuel4business@gmail.com</p>
+                <Button text="Get in touch" onClick={() => window.location.href = 'mailto:charlesemmanuel4business@gmail.com'} classname="bg-[#8338EA] hover:bg-[#8338EA]/90 md:px-[100px] w-full font-dmsans text-center md:py-[20px] text-[16px] md:text-[20px] md:font-bold px-[25px] py-[15px] tracking-wider"/>
+                <a href="mailto:charlesemmanuel4business@gmail.com"><p className="underline underline-offset-4 sm:text-[20px] text-[13px] pt-5 text-center lg:text-right" >Charlesemmanuel4business@gmail.com</p></a>
             </div>
             
         

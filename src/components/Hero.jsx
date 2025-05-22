@@ -16,6 +16,7 @@ const Hero = () => {
 		hidden: { opacity: 0, y: 20 },
 		visible: { opacity: 1, y: 0 },
 	};
+    
 
 
   return (
@@ -28,7 +29,7 @@ const Hero = () => {
         className="px-5 flex flex-col lg:flex-row gap-x-4 gap-y-16 lg:justify-between items-center py-10 md:py-[20px] font-dmsans">
 
         <div className="relative w-full max-w-[929px] font-dmsans pt-5">
-            <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+            <img className="absolute -top-2/4 -left-1/4 pointer-events-none" src={greenblur} alt="img" />
             <div className="text-white sm:text-[90px] text-[40px] sm:leading-[124.99px] leading-[46px] pb-5 font-bold tracking-wider">
                 <motion.p >Hi, I'm</motion.p>
                 <motion.p variants={textVariant} transition={{ duration: 0.5, delay: 0.4 }}>Charles Emmanuel.</motion.p>
@@ -45,11 +46,16 @@ const Hero = () => {
             <motion.div 
                 variants={textVariant}
                 transition={{ duration: 0.5, delay: 1.2 }}
-            className="flex items-center gap-x-3 mx-auto pt-10">
-                <Button text="Get in touch" classname="bg-[#8338EA] hover:bg-[#8338EA]/90 md:px-[50px] md:py-[20px] text-[14px] sm:text-[16px] md:text-[20px] md:font-bold px-[25px] py-[15px] tracking-wider"/>
+                className="flex items-center gap-x-3 mx-auto pt-10">
+                <Button 
+                    text="Get in touch" 
+                    classname="bg-[#8338EA] hover:bg-[#8338EA]/90 md:px-[50px] md:py-[20px] text-[14px] sm:text-[16px] md:text-[20px] md:font-bold px-[25px] py-[15px] tracking-wider"
+                    onClick={() => window.location.href = 'mailto:charlesemmanuel4business@gmail.com'}
+                />
                 <Button 
                     text="Resume"
                     classname="bg-[#1E1E1E] hover:bg-[#1E1E1E]/90 px-[25px]  md:px-[50px] md:py-[20px] text-[14px] sm:text-[16px] md:text-[20px] md:font-bold tracking-wider"
+                    onClick={() => window.open('https://drive.google.com/file/d/1Os8XW5pQqnYeNPpRY__xSzN7IR1_a895/view?usp=drivesdk', '_blank')}
                 />
             </motion.div>
 
