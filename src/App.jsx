@@ -7,8 +7,11 @@ import Plugtent from "./pages/Plugtent";
 import Starhomes from "./pages/Starhomes";
 import Cashblast from "./pages/Cashblast";
 import Custommailers from "./pages/Custommailers";
+import Easypilot from "./pages/Easypilot";
 import Contactme from "./pages/Contactme";
+import Onijekuje from "./pages/Onijekuje";
 import ScrollToTop from "./components/ScrollToTop";
+import Hostrrr from "./pages/Hostrrr";
 
 
 const App = () => {
@@ -55,7 +58,22 @@ const App = () => {
             element={<Custommailers/>}
           />    
 
-           <Route
+          <Route
+            path="/easypilot"
+            element={<Easypilot/>}
+          />    
+          
+          <Route
+            path="/onijekuje"
+            element={<Onijekuje/>}
+          />  
+
+          <Route
+            path="/hostrrr"
+            element={<Hostrrr/>}
+          />  
+
+          <Route
             path="/contact"
             element={<Contactme/>}
           />    

@@ -1,43 +1,67 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
-import {Typewriter} from "react-simple-typewriter"
+//import {Typewriter} from "react-simple-typewriter"
 import Hero from "../components/Hero"
 //import homegif from "../assets/img/home-gif.png"
-import hemperor from "../assets/img/hemperor-gif.gif"
-import plugtentimg from "../assets/img/plugtent-img.png"
-import starhomesimg from "../assets/img/starhomes-img.png"
-import parseatimg from "../assets/img/parseat-img.png"
-import cashblastimg from "../assets/img/cashblast-img.png"
-import custommailers from "../assets/img/custom-mailers-img.png"
-//import linkicon from "../assets/img/linkicon.png"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
-import { Link } from 'react-router-dom';
+
+//import { Link } from 'react-router-dom';
 
 import {motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import purpleblur from "../assets/img/purpleblur.png"
+
+//import purpleblur from "../assets/img/purpleblur.png"
 import SemiCircles from "../components/SemiCircles"
+import Works from "../components/Works"
+import Newfooter from "../components/Newfooter"
+
+// Variants
+const containerVariant = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+  
+  const fadeUpVariant = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
 
 const Home = () => {
     //const { ref: firstRef, inView: firstInView } = useInView();
-	const { ref: secondRef, inView: secondInView } = useInView();
-	const { ref: thirdRef, inView: thirdInView } = useInView();
-	const { ref: forthRef, inView: forthInView } = useInView();
+	// const { ref: secondRef, inView: secondInView } = useInView();
+	// const { ref: thirdRef, inView: thirdInView } = useInView();
+	// const { ref: forthRef, inView: forthInView } = useInView();
 
-	const textVariant = {
-		hidden: { opacity: 0, y: 20 },
-		visible: { opacity: 1, y: 0 },
-	};
+    const { ref: heroRef, inView: heroInView } = useInView({ triggerOnce: true });
+    const { ref: projectsRef, inView: projectsInView } = useInView({ triggerOnce: true });
+
+	// const textVariant = {
+	// 	hidden: { opacity: 0, y: 20 },
+	// 	visible: { opacity: 1, y: 0 },
+	// };
 
   return (
     <>
-        <section className="max-w-[1440px] mx-auto pt-[104.35px] px-5 ">
-            <Hero />
-            
-        </section>
+        <motion.section 
+            ref={heroRef}
+            variants={fadeUpVariant}
+            initial="hidden"
+            animate={heroInView ? "visible" : "hidden"}
+            className="max-w-[1440px] mx-auto pt-[104.35px] px-5 ">
+            <Hero />  
+        </motion.section>
 
-        <section className="relative max-w-[1440px] mx-auto pt-20 pb-20 px-10 overflow-hidden">  
+        {/* <section className="relative max-w-[1440px] mx-auto pt-20 pb-20 px-10 overflow-hidden">  
             <img className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2" src={purpleblur} alt="img" />
             <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center">
                 <motion.div 
@@ -90,15 +114,14 @@ const Home = () => {
 
             </div>
             
-        </section>
+        </section> */}
 
         <motion.section
             className="max-w-[1440px] relative mx-auto bg-black pt-[104.35px] px-10 font-dmsans overflow-hidden"
-            variants={textVariant}
+            ref={projectsRef}
+            variants={containerVariant}
             initial="hidden"
-            animate={forthInView ? "visible" : "hidden"}
-            transition={{ duration: 0.5 }}
-            ref={forthRef}> 
+            animate={projectsInView ? "visible" : "hidden"}>
 
             {/* <div className="absolute inset-0 bg-black -z-50"></div> */}
             
@@ -106,15 +129,16 @@ const Home = () => {
             <SemiCircles />         
 
             <motion.p 
-                variants={textVariant}
-                transition={{ duration: 0.5, dela:0.2 }}
-                className=" uppercase lg:text-[100px] md:text-[80px] sm:text-[50px] text-[32px] font-semibold lg:leading-[160px] md:leading-[100px] leading-[40px] pb-10 sm:pb-[20] tracking-wider">
+                variants={fadeUpVariant}
+                className=" uppercase lg:text-[80px] md:text-[50px] sm:text-[32px] text-[20px] font-semibold lg:leading-[160px] md:leading-[100px] leading-[40px] pb-5 tracking-wider">
                     Selected Projects
             </motion.p>
 
+            <Works />
+
             
             
-            <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
+            {/* <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
                 <div className="w-full max-w-[685px]">
                     <motion.img  
                         src={plugtentimg} 
@@ -137,9 +161,9 @@ const Home = () => {
                     </Link>
                 </div>
 
-            </div>
+            </div> */}
 
-            <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
+            {/* <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
 
                 <div className="w-full max-w-[700px]">
                     <motion.p className="text-3xl md:text-[60px] lg:text-[90px] leading-10 md:leading-[80px] font-normal pb-5 tracking-wider" variants={textVariant} transition={{duration:0.5, delay:1}}>Star Homes</motion.p>
@@ -159,9 +183,9 @@ const Home = () => {
                     <motion.img variants={textVariant} transition={{duration:0.5, delay:1.8}} src={starhomesimg} className="" alt="img" />
                 </div>
 
-            </div>
+            </div> */}
 
-            <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
+            {/* <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
                 <div className="w-full max-w-[685px]">
                     <motion.img variants={textVariant} transition={{duration:0.5, delay:2.0}} src={cashblastimg} className="" alt="img" />
                 </div>
@@ -177,9 +201,9 @@ const Home = () => {
                     </Link>
                 </div>
 
-            </div>
+            </div> */}
 
-            <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
+            {/* <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center md:pb-36 pb-28">
 
                 <div className="w-full max-w-[700px]">
                     <motion.p variants={textVariant} transition={{duration:0.5, delay:2.6}} className="text-3xl md:text-[60px] lg:text-[90px] leading-10 md:leading-[80px] font-normal pb-5 tracking-wider">Custom Mailers</motion.p>
@@ -198,9 +222,9 @@ const Home = () => {
                     <motion.img variants={textVariant} transition={{duration:0.5, delay:3.0}} src={custommailers} className="" alt="img" />
                 </div>
 
-            </div>
+            </div> */}
 
-            <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center pb-28">
+            {/* <div className="flex flex-col lg:flex-row gap-x-8 gap-y-5 justify-between items-center pb-28">
                 <div className="w-full max-w-[685px]">
                     <img src={parseatimg} className="" alt="img" />
                 </div>
@@ -218,16 +242,25 @@ const Home = () => {
                     </Link>
                 </div>
 
-            </div>
+            </div> */}
 
         </motion.section>
 
-        <section className="px-10 py-20">
+        {/* <section className="px-10 py-20">
             <Contact/>
-        </section>
+        </section> */}
         
         
-        <Footer/>
+        {/* <Footer/> */}
+
+        <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        >
+            <Newfooter />
+        </motion.div>
 
         
     </>

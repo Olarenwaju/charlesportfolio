@@ -1,9 +1,11 @@
 //import React from 'react'
-import Contact from "../components/Contact"
+//import Contact from "../components/Contact"
+import Newfooter from "../components/Newfooter";
+
 
 const Contactme = () => {
   return (
-    <div className="py-40"><Contact /></div>
+    <div className=""><Newfooter/></div>
   )
 }
 
