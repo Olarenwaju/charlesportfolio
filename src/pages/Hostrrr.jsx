@@ -24,35 +24,35 @@ import Newfooter from "../components/Newfooter";
 const Hostrrr = () => {
   return (
     <>
-        <section className="max-w-[1300px] w-full mx-auto pt-[150px] px-5 font-dmsans">
-            <img className="absolute -top-2/4 -left-1/4" src={greenblur} alt="img" />
+        <section className="max-w-[1300px] w-full mx-auto pt-20 sm:pt-24 md:pt-[150px] px-4 sm:px-5 font-dmsans relative">
+            <img className="absolute -top-2/4 -left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 opacity-50 sm:opacity-75 pointer-events-none hidden sm:block" src={greenblur} alt="img" />
             <div className="fixed z-50">
                 <Backbutton/>
             </div>
-            <img src={hostrrrhero } className="w-full mx-auto pb-10" alt="abt"/>
-            <p className="text-[30px] sm:text-[40px] md:text-[55px] font-semibold pb-16">
+            <img src={hostrrrhero } className="w-full mx-auto pb-6 sm:pb-8 md:pb-10" alt="abt"/>
+            <p className="text-xl sm:text-2xl md:text-[30px] lg:text-[40px] xl:text-[55px] font-semibold pb-8 sm:pb-12 md:pb-16 leading-tight">
                 Hostrrr: An e-commerce platform for ordering fully customizable poly mailers
             </p>
 
-            <div className="max-w-[900px] flex justify-between gap-x-4 py-10 text-xs sm:text-lg">
+            <div className="max-w-[900px] grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-x-4 py-6 sm:py-8 md:py-10 text-xs sm:text-sm md:text-base lg:text-lg">
  
                 <div className="text-center">
-                    <h1 className="">My Role</h1>
+                    <h1 className="font-semibold pb-1">My Role</h1>
                     <p className="text-[#cccccca9]">Product Designer</p>
                 </div>
 
                 <div className="text-center">
-                    <h1 className="">Timeline</h1>
+                    <h1 className="font-semibold pb-1">Timeline</h1>
                     <p className="text-[#cccccca9]">4 - 5 weeks</p>
                 </div>
 
                 <div className="text-center">
-                    <h1 className="">Location</h1>
+                    <h1 className="font-semibold pb-1">Location</h1>
                     <p className="text-[#cccccca9]">Remote</p>
                 </div>
 
                 <div className="text-center">
-                    <h1 className="">Tools</h1>
+                    <h1 className="font-semibold pb-1">Tools</h1>
                     <p className="text-[#cccccca9]">Figma, figjam</p>
                 </div>
 
@@ -60,29 +60,29 @@ const Hostrrr = () => {
 
         </section>
 
-        <section className="max-w-[1300px] w-full mx-auto pt-[100px] px-5 font-dmsans">
-            <div className="pb-28">
-                <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5 sm:pb-10">Overview</p>
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal">
+        <section className="max-w-[1300px] w-full mx-auto pt-12 sm:pt-16 md:pt-20 lg:pt-[100px] px-4 sm:px-5 font-dmsans">
+            <div className="pb-12 sm:pb-16 md:pb-20 lg:pb-28">
+                <p className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pb-4 sm:pb-6 md:pb-8 lg:pb-10 leading-tight">Overview</p>
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal">
                     Hostrrr is a social event-hosting platform (mobile app) that makes it easy for anyone to create, 
-                    join, and enjoy meaningful gatherings, whether it’s a private dinner, game night, or networking event. 
+                    join, and enjoy meaningful gatherings, whether it&apos;s a private dinner, game night, or networking event. 
                     The app helps users plan events effortlessly, manage food arrangements, verify guests for safety, 
                     and connect attendees before the big day.
                 </p>
 
             </div>
 
-            <img src={hostrrrimg1} className="mx-auto" alt="hostrrrimg1" />
+            <img src={hostrrrimg1} className="mx-auto w-full h-auto pb-6 sm:pb-8 md:pb-10" alt="hostrrrimg1" />
 
-            <div className="pt-20">
-                <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5">My Role</p>
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-5 sm:pb-10">
+            <div className="pt-12 sm:pt-16 md:pt-20">
+                <p className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pb-4 sm:pb-5 leading-tight">My Role</p>
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-6 md:pb-8 lg:pb-10">
                     I was responsible for auditing the existing UI, identifying UX flaws, redesigning core experiences ( for both hosts and guests ), 
                     and establishing a consistent visual and interaction language across the app
                 </p>
 
-                <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5">The Problem</p>
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normalpb-5 sm:pb-10">
+                <p className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pb-4 sm:pb-5 leading-tight">The Problem</p>
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-6 md:pb-8 lg:pb-10">
                     When I joined the project, Hostrrr already had some existing designs, but they were inconsistent, 
                     visually outdated, and lacked UX depth. Font sizes were too small, there was no design system, 
                     and the experience felt fragmented. My job was to take over the design, fix the UX, build a scalable system, 
@@ -90,7 +90,7 @@ const Hostrrr = () => {
                     The previous design had good ideas but poor execution:
                 </p>
 
-                <ul className="list-disc pb-10 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal pb-5">
+                <ul className="list-disc pl-5 sm:pl-6 pb-6 sm:pb-8 md:pb-10 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal space-y-2">
                     <li>Inconsistent font sizes and spacing</li>
                     <li>No design system or reusable component structure</li>
                     <li>Weak visual hierarchy</li>
@@ -98,7 +98,7 @@ const Hostrrr = () => {
                     <li>Missing product features crucial for trust and community engagement</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normalpb-5 sm:pb-10">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-6 md:pb-8 lg:pb-10">
                     These issues made the app feel unpolished and hard to use, especially for first-time hosts or guests trying to
                     navigate event setup or registration
                 </p>
@@ -107,12 +107,12 @@ const Hostrrr = () => {
 
         </section>
 
-        <section className="max-w-[1300px] w-full mx-auto pt-[50px] px-5 font-dmsans pb-[100px]">
+        <section className="max-w-[1300px] w-full mx-auto pt-8 sm:pt-12 md:pt-16 lg:pt-[50px] px-4 sm:px-5 font-dmsans pb-12 sm:pb-16 md:pb-20 lg:pb-[100px]">
             <div>
-                <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5">The Goal</p>
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-2 sm:pb-10">To redesign Hostrrr into a modern, social, and user-friendly platform by:</p>
+                <p className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pb-4 sm:pb-5 leading-tight">The Goal</p>
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-6 md:pb-8 lg:pb-10">To redesign Hostrrr into a modern, social, and user-friendly platform by:</p>
                 
-                <ul className="list-disc pb-10 sm:pb-20 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
+                <ul className="list-disc pl-5 sm:pl-6 pb-8 sm:pb-12 md:pb-16 lg:pb-20 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal space-y-2">
                     <li>Inconsistent font sizes and spacing</li>
                     <li>No design system or reusable component structure</li>
                     <li>Weak visual hierarchy</li>
@@ -120,13 +120,13 @@ const Hostrrr = () => {
                     <li>Missing product features crucial for trust and community engagement</li>
                 </ul>
 
-                <img src={hostrrrimg2} className="mx-auto" alt="hostrrrimg2" />
+                <img src={hostrrrimg2} className="mx-auto w-full h-auto pb-6 sm:pb-8 md:pb-10" alt="hostrrrimg2" />
 
-                <h2 className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pt-12 pb-5">UI Design Improvements</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pt-8 sm:pt-10 md:pt-12 pb-4 sm:pb-5 leading-tight">UI Design Improvements</h2>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-2">The new interface feels warmer, cleaner, and social by design.</p>
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-6">The new interface feels warmer, cleaner, and social by design.</p>
                 
-                <ul className="list-disc pb-5 sm:pb-10 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
+                <ul className="list-disc pl-5 sm:pl-6 pb-6 sm:pb-8 md:pb-10 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal space-y-2">
                     <li>Clear typography hierarchy with readable sizes</li>
                     <li>Thoughtful empty states, and error states.</li>
                     <li>Weak visual hierarchy</li>
@@ -135,96 +135,96 @@ const Hostrrr = () => {
                 </ul>
 
                 
-                <h2 className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pt-5 pb-5">New Features Introduced</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pt-6 sm:pt-8 md:pt-10 lg:pt-5 pb-4 sm:pb-5 leading-tight">New Features Introduced</h2>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-2">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-6">
                     To make Hostrrr feel more social, secure, and dynamic, I added several new features and flows:
                 </p>
                 
-                <ul className="list-disc pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li className="text-white">Verification Flow:</li>
+                <ul className="list-disc pl-5 sm:pl-6 pb-2 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal">
+                    <li className="text-white font-semibold">Verification Flow:</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-20">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-12 sm:pb-16 md:pb-20">
                     Before users can host or join an event, they must complete identity verification; small gatherings (≤5 guests) 
                     require ID + selfie, while larger ones require address verification in addition to ID verification. 
                     This increased trust and reduced safety concerns.
                 </p>
 
-                <img src={hostrrrimg3} className="mx-auto" alt="hostrrrimg3" />
+                <img src={hostrrrimg3} className="mx-auto w-full h-auto pb-6 sm:pb-8 md:pb-10" alt="hostrrrimg3" />
 
-                <ul className="list-disc pt-20 pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li className="text-white">In-App Wallet</li>
+                <ul className="list-disc pl-5 sm:pl-6 pt-12 sm:pt-16 md:pt-20 pb-2 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal">
+                    <li className="text-white font-semibold">In-App Wallet</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-20">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-12 sm:pb-16 md:pb-20">
                     Enables secure transactions within the platform for event payments, ticketing, or food contributions.
                 </p>
 
-                <img src={hostrrrimg4} className="mx-auto" alt="hostrrrimg4" />
+                <img src={hostrrrimg4} className="mx-auto w-full h-auto pb-6 sm:pb-8 md:pb-10" alt="hostrrrimg4" />
 
-                <ul className="list-disc pt-20 pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li className="text-white">Messaging Feature:</li>
+                <ul className="list-disc pl-5 sm:pl-6 pt-12 sm:pt-16 md:pt-20 pb-2 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal">
+                    <li className="text-white font-semibold">Messaging Feature:</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-20">
-                A   llows direct host-to-guest communication and pre-event chat rooms for guests to connect, share ideas, or plan collaboratively
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-12 sm:pb-16 md:pb-20">
+                    Allows direct host-to-guest communication and pre-event chat rooms for guests to connect, share ideas, or plan collaboratively
                 </p>
 
-                <img src={hostrrrimg5} className="mx-auto" alt="hostrrrimg5" />
+                <img src={hostrrrimg5} className="mx-auto w-full h-auto pb-6 sm:pb-8 md:pb-10" alt="hostrrrimg5" />
 
-                <ul className="list-disc pt-20 pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li className="text-white">Support & FAQ Page:</li>
+                <ul className="list-disc pl-5 sm:pl-6 pt-12 sm:pt-16 md:pt-20 pb-2 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal">
+                    <li className="text-white font-semibold">Support & FAQ Page:</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-5">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-5">
                     Simplified support access and guided users through common issues without needing external help
                 </p>
 
-                <ul className="list-disc pt-2 pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li className="text-white">Settings & Account Page:</li>
+                <ul className="list-disc pl-5 sm:pl-6 pt-4 sm:pt-6 pb-2 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal">
+                    <li className="text-white font-semibold">Settings & Account Page:</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-5">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-5">
                     Gave users control over profile info, privacy, and event preferences.
                 </p>
-                <ul className="list-disc pt-22 pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li className="text-white">Scan Barcode (Check-In):</li>
+                <ul className="list-disc pl-5 sm:pl-6 pt-4 sm:pt-6 pb-2 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal">
+                    <li className="text-white font-semibold">Scan Barcode (Check-In):</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-5">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-4 sm:pb-5">
                     Guests scan a host-provided QR code upon arrival — confirming attendance and enhancing event safety.
                 </p>
 
-                <ul className="list-disc pt-22 pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li className="text-white">Share Event Feature:</li>
+                <ul className="list-disc pl-5 sm:pl-6 pt-4 sm:pt-6 pb-2 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal">
+                    <li className="text-white font-semibold">Share Event Feature:</li>
                 </ul>
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pb-5 sm:pb-10">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pb-6 sm:pb-8 md:pb-10">
                     Both hosts and attendees can share events outside the app to invite friends or contacts to join.
                 </p>
 
-                <img src={hostrrrimg6} className="mx-auto" alt="hostrrrimg6" />
+                <img src={hostrrrimg6} className="mx-auto w-full h-auto pb-6 sm:pb-8 md:pb-10" alt="hostrrrimg6" />
 
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal py-5">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal py-4 sm:py-5">
                     A major UX improvement was refining how food is managed at events. Hosts can now choose one of four structured food setups:
                 </p>
 
-                <ul className="list-disc pb-2 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
-                    <li>Host’s Treat: The host provides food for everyone.</li>
+                <ul className="list-disc pl-5 sm:pl-6 pb-4 sm:pb-6 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal space-y-2">
+                    <li>Host&apos;s Treat: The host provides food for everyone.</li>
                     <li>Ordering Food: Guests order and pay for their own meals.</li>
                     <li>Potluck: Guests bring dishes to share (they can select categories like Starters, Main Meals, Desserts, or Drinks).</li>
                     <li>Assigned Dish: The host assigns specific food or recipes to guests.</li>
                 </ul>
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pt-2 pb-10">
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pt-2 sm:pt-3 pb-6 sm:pb-8 md:pb-10">
                     Each option includes tailored microcopy that keeps things clear and social.
                 </p>
 
-                <img src={hostrrrimg7} className="mx-auto" alt="hostrrrimg6" />
+                <img src={hostrrrimg7} className="mx-auto w-full h-auto pb-6 sm:pb-8 md:pb-10" alt="hostrrrimg6" />
 
-                <h2 className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pt-5">Results</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pt-6 sm:pt-8 md:pt-10 lg:pt-5 leading-tight">Results</h2>
                 
-                <ul className="list-disc pb-5 sm:pb-10 text-[20px] sm:text-[28px] leading-[40px] sm:leading-[40px] text-[#CCCCCC] font-normal ">
+                <ul className="list-disc pl-5 sm:pl-6 pb-6 sm:pb-8 md:pb-10 text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[28px] leading-relaxed sm:leading-[30px] md:leading-[35px] lg:leading-[40px] text-[#CCCCCC] font-normal space-y-2">
                     <li>Improved user flow and readability across the app</li>
                     <li>Introduced a sense of community and trust</li>
                     <li>Reduced user confusion by 60% (based on prototype testing feedback)</li>
@@ -232,8 +232,8 @@ const Hostrrr = () => {
                     <li>Clearer, more engaging onboarding experience</li>
                 </ul>
 
-                <h2 className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pt-5">I feel like a proud Dad!</h2>
-                <p className="text-[20px] sm:text-[30px] leading-[40px] sm:leading-[50px] text-[#CCCCCC] font-normal pt-2 pb-10">
+                <h2 className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pt-6 sm:pt-8 md:pt-10 lg:pt-5 leading-tight">I feel like a proud Dad!</h2>
+                <p className="text-base sm:text-lg md:text-[20px] lg:text-[24px] xl:text-[30px] leading-relaxed sm:leading-[30px] md:leading-[40px] lg:leading-[45px] xl:leading-[50px] text-[#CCCCCC] font-normal pt-2 sm:pt-3 pb-6 sm:pb-8 md:pb-10">
                     
                     Taking over Hostrrr was both a redesign and reimagination project. 
                     I didn’t just make it look better, I made it work better.
@@ -248,15 +248,15 @@ const Hostrrr = () => {
 
         </section>
 
-        <section className="max-w-[1300px] w-full mx-auto pt-[50px] px-5 font-dmsans">
-            <p className="text-[50px] sm:text-[60px] md:text-[80px] font-bold pb-5 sm:pb-10">Feed Your Eyes</p>
-            <img src={hostrrrimg8} className="w-full mx-auto pb-5 sm:pb-10" alt="abt"/>
-            <img src={hostrrrimg9} className="w-full mx-auto pb-5 sm:pb-10" alt="abt"/>
-            <img src={hostrrrimg10} className="w-full mx-auto pb-5 sm:pb-10" alt="abt"/>
+        <section className="max-w-[1300px] w-full mx-auto pt-8 sm:pt-12 md:pt-16 lg:pt-[50px] px-4 sm:px-5 font-dmsans">
+            <p className="text-3xl sm:text-4xl md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold pb-4 sm:pb-6 md:pb-8 lg:pb-10 leading-tight">Feed Your Eyes</p>
+            <img src={hostrrrimg8} className="w-full mx-auto pb-4 sm:pb-6 md:pb-8 lg:pb-10" alt="abt"/>
+            <img src={hostrrrimg9} className="w-full mx-auto pb-4 sm:pb-6 md:pb-8 lg:pb-10" alt="abt"/>
+            <img src={hostrrrimg10} className="w-full mx-auto pb-4 sm:pb-6 md:pb-8 lg:pb-10" alt="abt"/>
 
-            <div className="bg-[#1a1a1a] p-16 rounded-box">
-                <p className="pb-5">A link to the live version:</p>
-                <a href="" className="text-[#ffa500] text-6xl underline" target="_blank">
+            <div className="bg-[#1a1a1a] p-6 sm:p-8 md:p-12 lg:p-16 rounded-box">
+                <p className="pb-3 sm:pb-4 md:pb-5 text-sm sm:text-base">A link to the live version:</p>
+                <a href="" className="text-[#ffa500] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl underline break-words" target="_blank">
                     Hostrrr   
                 </a>  
             </div>
