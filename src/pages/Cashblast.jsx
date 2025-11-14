@@ -20,6 +20,7 @@ import cashblastscreen3 from "../assets/img/cashblastscreen3.png";
 import Backbutton from "../components/Backbutton";
 import greenblur from "../assets/img/greenblur.png";
 import Newfooter from "../components/Newfooter";
+import WorksCarousel from "../components/WorksCarousel";
 
 const Cashblast = () => {
   return (
@@ -414,6 +415,16 @@ const Cashblast = () => {
             </a>
           </div>
         </div>
+      </section>
+
+      <section className="max-w-[1300px] w-full mx-auto md:pt-[150px] pt-[100px] px-5 sm:pb-40 pb-14">
+        <div className="text-[40px] sm:text-[70px] pb-5">
+          <h1 className="pb-1 sm:pb-5 lg:text-[125px] md:text-[100px] sm:text-[80px] text-[40px] font-dmsans font-bold bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent">
+            My Works
+          </h1>
+        </div>
+
+        <WorksCarousel />
       </section>
 
       <Newfooter />

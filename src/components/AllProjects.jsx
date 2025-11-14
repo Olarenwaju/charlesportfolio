@@ -95,7 +95,7 @@ const projects = [
     description:
       "Parseat is an event management tool targeted at solving seat management challenges for party/event organizers and individual party owners.",
     image: parseat,
-    link: "/",
+    link: "/parseat",
     hasImageHover: false,
   },
 ];

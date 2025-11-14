@@ -114,7 +114,7 @@ const Hero = () => {
           </motion.p>
         </div>
 
-        <Link to="/">
+        <Link to="https://drive.google.com/drive/folders/1OmvfQS6QclY5dRj9tHNRpz32VWG_rw4X">
           <motion.button
             className="px-5 mr-3 uppercase py-2.5 sm:px-6 sm:py-3 mt-6 sm:mt-8 md:mt-10 md:px-8 md:py-4 bg-[#1d1d1f] hover:bg-white hover:text-black text-white text-xs sm:text-sm font-semibold tracking-widest rounded-full transition-colors"
             initial={{ opacity: 0, y: 20 }}
@@ -126,6 +126,9 @@ const Hero = () => {
         </Link>
 
         <motion.button
+          onClick={() =>
+            (window.location.href = "mailto:Charlesemmanuel4business@gmail.com")
+          }
           className="uppercase px-5 py-2.5 sm:px-6 sm:py-3 mt-6 sm:mt-8 md:mt-10 md:px-8 md:py-4 bg-[#ffffff] hover:bg-[#1d1d1f] hover:text-white text-black font-bold text-xs sm:text-sm tracking-widest rounded-full transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={firstInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}

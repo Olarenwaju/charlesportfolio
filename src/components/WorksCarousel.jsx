@@ -24,7 +24,7 @@ const projects = [
     description:
       "Ray Interiors is a portfolio website designed to showcase the work of an Interior decorator, highlighting their design expertise, past projects, and services.",
     image: rayinterior,
-    link: "/rayinteriors",
+    link: "/",
     status: "online",
   },
   {
@@ -75,7 +75,7 @@ const WorksCarousel = () => {
           {duplicatedProjects.map((project, index) => (
             <div
               key={`${project.id}-${index}`}
-              className="w-full max-w-[500px] bg-[#25252544] rounded-box flex-shrink-0 flex flex-col"
+              className="w-full max-w-[500px] bg-[#212121] rounded-box flex-shrink-0 flex flex-col"
             >
               <div className="m-2 overflow-hidden rounded-box h-[250px] sm:h-[300px] lg:h-[386px]">
                 <img

@@ -146,6 +146,9 @@ const Newfooter = () => {
 
         {/* Contact Button */}
         <motion.button
+          onClick={() =>
+            (window.location.href = "mailto:Charlesemmanuel4business@gmail.com")
+          }
           variants={fadeInUp}
           className="px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-[#1d1d1f] hover:bg-[#1d1d1f8b] text-white text-xs sm:text-sm font-semibold tracking-widest rounded-full transition-colors"
         >
@@ -157,13 +160,22 @@ const Newfooter = () => {
           variants={fadeInUp}
           className="flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 text-xs sm:text-sm font-semibold tracking-widest flex-wrap justify-center"
         >
-          <Link to="#" className="hover:text-gray-400 transition-colors">
+          <Link
+            to="https://www.linkedin.com/in/emmanuelcharles1/"
+            className="hover:text-gray-400 transition-colors"
+          >
             LINKEDIN
           </Link>
-          <Link to="#" className="hover:text-gray-400 transition-colors">
+          <Link
+            to="https://dribbble.com/DesignHemperor"
+            className="hover:text-gray-400 transition-colors"
+          >
             DRIBBBLE
           </Link>
-          <Link to="#" className="hover:text-gray-400 transition-colors">
+          <Link
+            to="https://x.com/chizzyhemperor?s=21"
+            className="hover:text-gray-400 transition-colors"
+          >
             TWITTER
           </Link>
         </motion.div>
