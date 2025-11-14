@@ -12,78 +12,42 @@ import Contactme from "./pages/Contactme";
 import Onijekuje from "./pages/Onijekuje";
 import ScrollToTop from "./components/ScrollToTop";
 import Hostrrr from "./pages/Hostrrr";
-
+import Allprojects from "./pages/Allprojects";
 
 const App = () => {
   return (
     <div>
-      
       <Router>
-        <ScrollToTop /> 
+        <ScrollToTop />
         <Header />
         <Routes>
+          <Route exact path="/" element={<Home />} />
 
-          <Route
-            exact path="/"
-            element={<Home />}
-          />
+          <Route path="/about" element={<About />} />
 
-          <Route
-            path="/about"
-            element={<About/>}
-          />
+          <Route path="/all-projects" element={<Allprojects />} />
 
-          <Route
-            path="/parseat"
-            element={<Parseat/>}
-          />   
+          <Route path="/parseat" element={<Parseat />} />
 
-          <Route
-            path="/plugtent"
-            element={<Plugtent/>}
-          />    
+          <Route path="/plugtent" element={<Plugtent />} />
 
-          <Route
-            path="/starhomes"
-            element={<Starhomes/>}
-          />    
+          <Route path="/starhomes" element={<Starhomes />} />
 
-          <Route
-            path="/cashblast"
-            element={<Cashblast/>}
-          />  
+          <Route path="/cashblast" element={<Cashblast />} />
 
-          <Route
-            path="/custommailers"
-            element={<Custommailers/>}
-          />    
+          <Route path="/custommailers" element={<Custommailers />} />
 
-          <Route
-            path="/easypilot"
-            element={<Easypilot/>}
-          />    
-          
-          <Route
-            path="/onijekuje"
-            element={<Onijekuje/>}
-          />  
+          <Route path="/easypilot" element={<Easypilot />} />
 
-          <Route
-            path="/hostrrr"
-            element={<Hostrrr/>}
-          />  
+          <Route path="/onijekuje" element={<Onijekuje />} />
 
-          <Route
-            path="/contact"
-            element={<Contactme/>}
-          />    
+          <Route path="/hostrrr" element={<Hostrrr />} />
 
-
+          <Route path="/contact" element={<Contactme />} />
         </Routes>
       </Router>
     </div>
-    
-  )
-}
+  );
+};
 
 export default App;

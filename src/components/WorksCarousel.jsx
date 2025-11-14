@@ -62,10 +62,6 @@ const WorksCarousel = () => {
 
   return (
     <section className="max-w-[1300px] w-full mx-auto pt-[50px] px-5 font-dmsans">
-      <div className="text-[40px] sm:text-[70px] pb-5">
-        <h1 className="pb-1 sm:pb-5">Some of my other stuff</h1>
-      </div>
-
       <div className="overflow-hidden w-full">
         <div
           className="flex space-x-5 gap-4 lg:gap-x-4 animate-scroll"
@@ -79,7 +75,7 @@ const WorksCarousel = () => {
           {duplicatedProjects.map((project, index) => (
             <div
               key={`${project.id}-${index}`}
-              className="w-full max-w-[500px] bg-[#25252544] rounded-box flex-shrink-0"
+              className="w-full max-w-[500px] bg-[#25252544] rounded-box flex-shrink-0 flex flex-col"
             >
               <div className="m-2 overflow-hidden rounded-box h-[250px] sm:h-[300px] lg:h-[386px]">
                 <img
@@ -89,13 +85,13 @@ const WorksCarousel = () => {
                 />
               </div>
 
-              <div className="p-3 sm:p-4 bg-[#252525] rounded-box m-2">
+              <div className="p-3 sm:p-4 bg-[#252525] rounded-box m-2 flex flex-col flex-grow">
                 <div className="pb-3 sm:pb-5">
                   <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
                     {project.title}
                   </h1>
                 </div>
-                <p className="text-sm sm:text-base text-[#cccccc96] leading-relaxed">
+                <p className="text-sm sm:text-base text-[#cccccc96] leading-relaxed flex-grow">
                   {project.description}
                 </p>
                 <div className="flex items-center justify-between pt-4 flex-wrap gap-2">
@@ -108,7 +104,7 @@ const WorksCarousel = () => {
                   <Link
                     to={project.link}
                     target="_blank"
-                    className="inline-flex items-center gap-2 text-white hover:text-slate-300 transition-colors text-xs sm:text-sm font-medium"
+                    className="inline-flex items-center gap-2 border p-2 border-[#333333e3] rounded-md text-white hover:text-slate-300 transition-colors text-xs sm:text-sm font-medium"
                   >
                     View Project
                     <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />

@@ -9,6 +9,7 @@ import hostrrr from "../assets/img/works/works-hostrrr-img.png";
 import starhomes from "../assets/img/works/works-starhomes-img.png";
 import cashblast from "../assets/img/works/works-cashblast-img.png";
 import plugtent from "../assets/img/works/works-plugtent-img.png";
+import parseat from "../assets/img/allprojects/parseat.png";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -88,9 +89,18 @@ const projects = [
     link: "/plugtent",
     hasImageHover: true,
   },
+  {
+    id: 8,
+    title: "Parseat",
+    description:
+      "Parseat is an event management tool targeted at solving seat management challenges for party/event organizers and individual party owners.",
+    image: parseat,
+    link: "/",
+    hasImageHover: false,
+  },
 ];
 
-const Works = () => {
+const AllProjects = () => {
   return (
     <div className="max-w-[1400px] w-full mx-auto font-dmsans pt-6 sm:pt-10 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
       {/* Masonry Layout using CSS Columns with better control */}
@@ -157,39 +167,9 @@ const Works = () => {
             </div>
           </motion.div>
         ))}
-
-        {/* All Works Card */}
-        <motion.div
-          className="inline-block w-full mb-4 lg:mb-6 bg-[#212121] rounded-box p-4 sm:p-5"
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ amount: 0.2 }}
-          custom={projects.length}
-        >
-          <div className="p-3 sm:p-4 bg-[#252525] rounded-box">
-            <div className="pb-3 sm:pb-5">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                All my Works
-              </h1>
-            </div>
-            <div className="flex items-center justify-between pt-4 flex-wrap gap-2">
-              <p className="text-sm sm:text-base text-[#cccccc96]">
-                See all of my works
-              </p>
-              <Link
-                to="/all-projects"
-                className="inline-flex items-center gap-2 border border-[#333333] rounded-md p-2 text-white hover:text-slate-300 transition-colors text-xs sm:text-sm font-medium"
-              >
-                View All Projects
-                <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
-              </Link>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   );
 };
 
-export default Works;
+export default AllProjects;
