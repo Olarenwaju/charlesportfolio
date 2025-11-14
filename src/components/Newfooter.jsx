@@ -1,7 +1,7 @@
 import { ArrowUp, Dot } from "lucide-react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { ArrowUpRight } from "lucide-react";
 
 const Newfooter = () => {
   const scrollToTop = () => {
@@ -158,26 +158,35 @@ const Newfooter = () => {
         {/* Social Links */}
         <motion.div
           variants={fadeInUp}
-          className="flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 text-xs sm:text-sm font-semibold tracking-widest flex-wrap justify-center"
+          className=" flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 text-xs sm:text-sm font-semibold tracking-widest flex-wrap justify-center"
         >
-          <Link
-            to="https://www.linkedin.com/in/emmanuelcharles1/"
-            className="hover:text-gray-400 transition-colors"
+          <a
+            href="https://www.linkedin.com/in/emmanuelcharles1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group hover:text-gray-400 transition-colors flex items-center gap-1"
           >
             LINKEDIN
-          </Link>
-          <Link
-            to="https://dribbble.com/DesignHemperor"
-            className="hover:text-gray-400 transition-colors"
+            <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
+          <a
+            href="https://dribbble.com/DesignHemperor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group hover:text-gray-400 transition-colors flex items-center gap-1"
           >
             DRIBBBLE
-          </Link>
-          <Link
-            to="https://x.com/chizzyhemperor?s=21"
-            className="hover:text-gray-400 transition-colors"
+            <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
+          <a
+            href="https://x.com/chizzyhemperor?s=21"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group hover:text-gray-400 transition-colors flex items-center gap-1"
           >
             TWITTER
-          </Link>
+            <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
         </motion.div>
       </motion.div>
 
